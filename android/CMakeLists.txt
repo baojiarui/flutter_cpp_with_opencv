@@ -1,7 +1,7 @@
 cmake_minimum_required(VERSION 3.4.1)
 
 # TODO please change me!
-set(OPENCV_BASE_DIR "/Users/tom/Others/OpenCVRelease/OpenCV-android-sdk")
+set(OPENCV_BASE_DIR "/Users/baojiarui/Android/OpenCV-android-sdk")
 
 set(OPENCV_INCLUDE_DIR "${OPENCV_BASE_DIR}/sdk/native/jni/include/")
 set(OPENCV_STATIC_LIB_DIR "${OPENCV_BASE_DIR}/sdk/native/staticlibs/${ANDROID_ABI}")
@@ -75,7 +75,7 @@ add_library(native_with_opencv
         SHARED
 
         # Provides a relative path to your source file(s).
-        ../ios/Classes/native_add.cpp
+        ../ios/Classes/cpp/native_add.cpp
         )
 
 target_link_libraries(native_with_opencv
